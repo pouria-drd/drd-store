@@ -1,8 +1,24 @@
+import { Button } from "@/components/ui";
+
 function LandingPage() {
     return (
-        <div>
-            test
-            <p>سلام تست 15151</p>
+        <div className="p-4">
+            <h1 className="">test</h1>
+            <p>سلام تست 15245 این یک متن تست می باشد</p>
+            <p>سلام تست 15245 این یک متن تست می باشد</p>
+            <p>سلام تست 15245 این یک متن تست می باشد</p>
+            <p>سلام تست 15245 این یک متن تست می باشد</p>
+            <p className="text-drd-primary">سلام تست 15151</p>
+            <p className="text-drd-primary">hello test</p>
+            <br />
+            <br />
+            <Button>دکمه تست</Button>
+            <br />
+            <br />
+            <Button>test button</Button>
+            <br />
+            <br />
+            <Button waiting>Create Account</Button>
         </div>
     );
 }

@@ -1,0 +1,6 @@
+.drdButton {
+    @apply bg-drd-primary hover:bg-drd-light-primary-11
+    transition-all rounded text-sm sm:text-base text-white
+    disabled:cursor-not-allowed px-3 py-1.5
+    disabled:bg-drd-light-primary-8 disabled:hover:bg-drd-light-primary-8;
+}

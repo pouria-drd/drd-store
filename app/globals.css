@@ -3,21 +3,50 @@
 @import "tailwindcss/components";
 
 :root {
-    --background: #f5f6f8;
+    --from-background: #ecf2ff;
+    --to-background: #fcfdff;
+
     --foreground: #3f3f46;
+    --text-color: #62636c;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
-        --background: #222222;
+        --from-background: #18213c;
+        --to-background: #121316;
+
         --foreground: #ededed;
+        --text-color: #b0b4c6;
     }
-}
+} */
 
 body {
+    scroll-margin-top: 5rem;
     color: var(--foreground);
-    background: var(--background);
+    /* background: var(--background); */
+    /* Optional: full height */
+    min-height: 100dvh;
+    background: linear-gradient(
+        to bottom,
+        var(--from-background),
+        var(--to-background)
+    );
     font-family: "IRANYekanX", "Vazir", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--foreground);
+    @apply text-2xl sm:text-3xl ss02;
+}
+
+p {
+    color: var(--text-color);
+    @apply text-sm sm:text-base ss02;
 }
 
 /* ---------------------------------------------------------------------- */
