@@ -41,7 +41,7 @@ const Button = (props: ButtonProps) => {
         return (
             <button
                 disabled={waiting}
-                className={cn(`${styles.drdButton}`, className)}
+                className={cn(`${styles.drdButton} w-full`, className)}
                 {...(restProps as AsButtonProps)}>
                 {waiting ? (
                     <Spinner borderSize="2" className="text-white w-6" />

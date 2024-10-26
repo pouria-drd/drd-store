@@ -12,7 +12,7 @@
 
 .drdInputLabel {
     @apply transition-all text-xs sm:text-[13px]
-    text-zinc-700 text-right mb-0.5 mr-1 w-full;
+    text-zinc-700 text-right mr-1 w-full;
 }
 
 .drdInputError {

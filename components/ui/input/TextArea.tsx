@@ -15,7 +15,7 @@ interface TextAreaProps
 const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
     ({ error, label, className, ...restProps }, ref) => {
         return (
-            <div className="flex flex-col gap-1 w-full p-0.5">
+            <div className="flex flex-col gap-1 w-full">
                 {label && (
                     <label className={`${styles.drdInputLabel} r2l`}>
                         {label}
