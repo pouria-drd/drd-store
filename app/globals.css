@@ -4,7 +4,7 @@
 
 :root {
     --from-background: #ecf2ff;
-    --to-background: #fcfdff;
+    --to-background: #ffffff;
 
     --foreground: #3f3f46;
     --text-color: #62636c;
@@ -23,14 +23,15 @@
 body {
     scroll-margin-top: 5rem;
     color: var(--foreground);
-    /* background: var(--background); */
-    /* Optional: full height */
     min-height: 100dvh;
-    background: linear-gradient(
+    /* background: linear-gradient(
         to bottom,
         var(--from-background),
         var(--to-background)
-    );
+    ); */
+    @apply bg-gradient-to-b 
+    from-[var(--from-background)] from-35%
+    to-[var(--to-background)] to-70%;
     font-family: "IRANYekanX", "Vazir", Arial, Helvetica, sans-serif;
 }
 

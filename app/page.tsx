@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui";
+import { Button, Input, TextArea } from "@/components/ui";
 
 function LandingPage() {
     return (
@@ -19,6 +19,23 @@ function LandingPage() {
             <br />
             <br />
             <Button waiting>Create Account</Button>
+            <br />
+            <br />
+            <Input label="Email" placeholder="example@example.com" />
+            <br />
+            <br />
+            <Input
+                label="Email"
+                placeholder="example@example.com"
+                error="error message"
+            />
+            <br />
+            <br />
+            <TextArea
+                error="wdadasd"
+                label="Description"
+                placeholder="Enter description"
+            />
         </div>
     );
 }
