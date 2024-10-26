@@ -1,21 +1,99 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/utilities";
+@import "tailwindcss/components";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #f5f6f8;
+    --foreground: #3f3f46;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #222222;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: "IRANYekanX", "Vazir", Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Scroll area */
+
+::-webkit-scrollbar {
+    @apply bg-gray-300 w-1.5 h-1.5;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    @apply bg-gray-400;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    @apply bg-gray-400;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* ---------------------------------------------------------------------- */
+/* General area */
+
+.glass {
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Vazir area */
+
+@font-face {
+    font-family: "IRANYekanX";
+    font-style: normal;
+    font-weight: normal;
+    src: url("@/app/fonts/IRANYekanX/IRANYekanX-Regular.woff") format("woff"),
+        url("@/app/fonts/IRANYekanX/IRANYekanX-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANYekanX";
+    font-style: normal;
+    font-weight: bold;
+    src: url("@/app/fonts/IRANYekanX/IRANYekanX-Bold.woff") format("woff"),
+        url("@/app/fonts/IRANYekanX/IRANYekanX-Bold.woff2") format("woff2");
+}
+
+.ss02 {
+    font-feature-settings: "ss02";
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+}
+
+.r2l {
+    direction: rtl;
+}
+
+.l2r {
+    direction: ltr;
+}
+
+@font-face {
+    font-family: "Vazir";
+    font-style: normal;
+    font-weight: normal;
+    src: url("@/app/fonts/Vazir/Vazir-Regular-FD.woff") format("woff"),
+        url("@/app/fonts/Vazir/Vazir-Regular-FD.woff2") format("woff2"),
+        url("@/app/fonts/Vazir/Vazir-Regular-FD.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Vazir";
+    font-style: normal;
+    font-weight: bold;
+    src: url("@/app/fonts/Vazir/Vazir-Bold-FD.woff") format("woff"),
+        url("@/app/fonts/Vazir/Vazir-Bold-FD.woff2") format("woff2"),
+        url("@/app/fonts/Vazir/Vazir-Bold-FD.ttf") format("ttf");
 }
