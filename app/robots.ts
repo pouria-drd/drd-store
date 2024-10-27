@@ -7,7 +7,8 @@ function robots(): MetadataRoute.Robots {
             allow: "/",
             disallow: "/private/",
         },
-        sitemap: "https://drdstore.shop/sitemap.xml",
+        sitemap:
+            process.env.BASE_URL || "https://drdstore.shop/" + "sitemap.xml/",
     };
 }
 
